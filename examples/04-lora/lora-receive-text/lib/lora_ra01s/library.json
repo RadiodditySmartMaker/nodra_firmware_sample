@@ -1,0 +1,7 @@
+{
+  "name": "lora_ra01s",
+  "version": "0.3.0",
+  "description": "RA-01S LoRa module (SX1262) with layered custom driver (spi/hal/config/shell/bench)",
+  "frameworks": "arduino",
+  "platforms": "nordicnrf52"
+}
