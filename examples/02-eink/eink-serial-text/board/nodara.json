@@ -1,0 +1,31 @@
+{
+  "build": {
+    "arduino": {"ldscript": "nrf52840_s140_v6_nodara.ld"},
+    "core": "nRF5",
+    "cpu": "cortex-m4",
+    "extra_flags": "-DARDUINO_NODARA -DNRF52840_XXAA",
+    "f_cpu": "64000000L",
+    "mcu": "nrf52840",
+    "variant": "nodara",
+    "variants_dir": "board",
+    "bsp": {"name": "adafruit"},
+    "softdevice": {"sd_flags": "-DS140", "sd_name": "s140", "sd_version": "6.1.1", "sd_fwid": "0x00B6"},
+    "bootloader": {"settings_addr": "0xFF000"}
+  },
+  "connectivity": ["bluetooth"],
+  "debug": {"jlink_device": "nRF52840_xxAA", "svd_path": "nrf52840.svd", "openocd_target": "nrf52840-mdk-rs"},
+  "frameworks": ["arduino"],
+  "name": "nodara (nRF52840, Adafruit BSP)",
+  "url": "https://github.com/sainstore/nodara",
+  "vendor": "sainstore",
+  "upload": {
+    "maximum_ram_size": 237568,
+    "maximum_size": 802816,
+    "speed": 115200,
+    "protocol": "nrfutil",
+    "protocols": ["jlink", "nrfjprog", "nrfutil", "stlink", "cmsis-dap"],
+    "use_1200bps_touch": true,
+    "require_upload_port": true,
+    "wait_for_upload_port": true
+  }
+}

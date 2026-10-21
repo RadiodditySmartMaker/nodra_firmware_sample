@@ -1,0 +1,7 @@
+{
+  "name": "button",
+  "version": "0.1.0",
+  "description": "Button detection module (6 buttons, interrupt + state machine)",
+  "frameworks": "arduino",
+  "platforms": "nordicnrf52"
+}
