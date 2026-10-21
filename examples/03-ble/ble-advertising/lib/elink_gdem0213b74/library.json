@@ -1,0 +1,7 @@
+{
+  "name": "elink_gdem0213b74",
+  "version": "0.2.0",
+  "description": "GDEM0213B74 (SSD1680) e-ink display with custom SSD1680 driver",
+  "frameworks": "arduino",
+  "platforms": "nordicnrf52"
+}
