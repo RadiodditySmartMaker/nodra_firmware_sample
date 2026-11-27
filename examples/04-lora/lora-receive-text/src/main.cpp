@@ -11,7 +11,7 @@ constexpr size_t kRxBufferSize = 64;
 constexpr uint32_t kRxTimeoutMs = 5500;
 
 uint32_t rx_count;
-bool first_rx_shown;
+// bool first_rx_shown;
 
 [[noreturn]] void halt_with_error(int error)
 {
@@ -72,12 +72,12 @@ void loop()
         Serial.print(" dBm  SNR=");
         Serial.println(snr);
 
-        if (!first_rx_shown) {
-            first_rx_shown = true;
+        // if (!first_rx_shown) {
+            // first_rx_shown = true;
             char text[64];
             snprintf(text, sizeof(text), "RX: %s\nRSSI %d dBm", (const char *)buf, (int)rssi);
             elink_gdem0213b74_show_text(text);
-        }
+        // }
     } else if (len != SX126X_ERR_RX_TIMEOUT) {
         Serial.print("RX error: ");
         Serial.println(len);
